@@ -1,7 +1,7 @@
 def call(String project, String ImageTag, String hubUser){
     
     sh """
-     sudo docker rmi ${hubUser}/${project}:latest
+     docker rmi ${hubUser}/${project}:latest
     """
 }
 
